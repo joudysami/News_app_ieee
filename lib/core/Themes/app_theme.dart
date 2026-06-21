@@ -7,28 +7,32 @@ class AppTheme {
 
   static final lighttheme = ThemeData(
     primaryColor: AppColor.white,
+    
     scaffoldBackgroundColor: AppColor.white,
-    appBarTheme: AppBarTheme(backgroundColor: AppColor.white),
+    appBarTheme: AppBarTheme(
+      backgroundColor: AppColor.white,
+      iconTheme: IconThemeData(color: AppColor.black),
+    ),
     textTheme: TextTheme(
       bodyMedium: TextStyle(color: AppColor.grey, fontSize: 16),
       bodyLarge: TextStyle(
         color: AppColor.black,
-        fontSize: 32,
+        fontSize: 32.sp,
         fontWeight: FontWeight.bold,
       ),
       titleLarge: TextStyle(
         color: AppColor.black,
-        fontSize: 24,
+        fontSize: 24.sp,
         fontWeight: FontWeight.w500,
       ),
       titleMedium: TextStyle(
         color: AppColor.black,
-        fontSize: 18,
+        fontSize: 18.sp,
         fontWeight: FontWeight.w500,
       ),
       titleSmall: TextStyle(
-        color: AppColor.black,
-        fontSize: 12.sp,
+        color: AppColor.babyblack,
+        fontSize: 16.sp,
         fontWeight: FontWeight.w500,
       ),
     ),
@@ -45,14 +49,11 @@ class AppTheme {
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: AppColor.babygrey, width: 1.w),
       ),
-
       outlineBorder: BorderSide(color: AppColor.babygrey, width: 1.w),
-
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: Colors.red, width: 1.w),
       ),
-
       disabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: AppColor.blue, width: 1.w),
@@ -61,6 +62,29 @@ class AppTheme {
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: AppColor.blue, width: 1.w),
       ),
+    ),
+    cardTheme: CardThemeData(
+      color: AppColor.white,
+      shadowColor: const Color.fromARGB(255, 224, 223, 223),
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.r),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColor.blue,
+        foregroundColor: Colors.white,
+        minimumSize: Size(double.infinity, 50.h),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.r),
+        ),
+      ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      selectedItemColor: AppColor.blue,
+      unselectedItemColor: AppColor.grey,
+      backgroundColor: AppColor.white,
     ),
   );
 
@@ -85,6 +109,11 @@ class AppTheme {
         color: AppColor.white,
         fontWeight: FontWeight.w500,
       ),
+      titleSmall: TextStyle(   color: AppColor.white,
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+
+      )
     ),
     brightness: Brightness.dark,
     textSelectionTheme: TextSelectionThemeData(
@@ -99,14 +128,11 @@ class AppTheme {
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: AppColor.babygrey, width: 1.w),
       ),
-
       outlineBorder: BorderSide(color: AppColor.babygrey, width: 1.w),
-
       errorBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: Colors.red, width: 1.w),
       ),
-
       disabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: AppColor.blue, width: 1.w),
@@ -115,6 +141,29 @@ class AppTheme {
         borderRadius: BorderRadius.circular(6.r),
         borderSide: BorderSide(color: AppColor.blue, width: 1.w),
       ),
+    ),
+    cardTheme: CardThemeData(
+      color: AppColor.babyblack,
+      shadowColor: const Color.fromARGB(255, 35, 35, 35),
+      elevation: 2,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12.r),
+      ),
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style: ElevatedButton.styleFrom(
+        backgroundColor: AppColor.blue,
+        foregroundColor: AppColor.black,
+        minimumSize: Size(double.infinity, 50.h),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8.r),
+        ),
+      ),
+    ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      selectedItemColor: AppColor.blue,
+      unselectedItemColor: Colors.grey,
+      backgroundColor: AppColor.black,
     ),
   );
 }

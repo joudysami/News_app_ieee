@@ -46,6 +46,13 @@ dependencies:
   action_slider: ^0.7.0
   url_launcher: ^6.3.2
   flutter_localization: ^0.4.0
+  timeago: ^3.7.1
+  shared_preferences: ^2.5.5
+  hive_flutter: ^1.1.0
+  get_it: ^9.2.1
+  image_picker: ^1.2.2
+  firebase_storage: ^13.4.3
+  dropdown_button2: ^3.1.0
 
 dev_dependencies:
   flutter_test:
